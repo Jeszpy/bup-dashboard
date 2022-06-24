@@ -5,7 +5,7 @@ import {Pool, Client} from 'pg'
 
 const connectDB = async () => {
     const client = new Client({
-        connectionString: settings.DB_URI,
+        connectionString: settings.DATABASE_URL,
         ssl: {
             rejectUnauthorized: false
         }

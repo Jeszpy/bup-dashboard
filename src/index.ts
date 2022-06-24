@@ -1,7 +1,7 @@
 import {settings} from "./settings";
 import express from 'express'
 import cors from "cors";
-import {Pool, Client} from 'pg'
+import {Client} from 'pg'
 
 const connectDB = async () => {
     const client = new Client({
